@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>FREEKNIGHT | PSD</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="icon.ico" />
+</head>
+
+<body class="body" onkeyup="key(event);">
+    <div class="div1" id="div1">
+
+
+        <p class="score" id="score">GO</p>
+
+
+        <img class="coin" id="coin" src="Coin (1).png" />
+
+        <img class="boy" id="boy" src="Idle (1).png" />
+
+    </div>
+
+    <div class="end" id="end">
+
+        <div class="endcenter">
+
+            <div>Game Over</div>
+            <div>Youre Score</div>
+            <div id="endscore">0</div>
+            <button class="btn1" onclick="re();">Start Again</button>
+
+        </div>
+    </div>
+
+    <div class="start" id="start">
+
+        <div class="startcenter">
+
+            <div>WELCOME TO FREEKNIGHT | PSD GAME!</div>
+
+            <div> *** </div>
+            <button class="btn2" onclick="str(event);">START GAME WITH REST</button>
+            <div class="d2">
+                <p>You can start this game press "ENTER" key OR press "SPACE" KEY </p>
+                <ul>
+                    <li> RUN :- "ENTER" KEY </li>
+                    <li>JUMP :-"SPACE" KEY </li>
+                </ul>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="win" id="win">
+        <button class="btn3" onclick="re();">Start Again</button>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
