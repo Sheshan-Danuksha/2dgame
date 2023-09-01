@@ -1,7 +1,7 @@
 .div1{
     width:100%;
     height:100vh;
-    background-image:url("resources/background_images/background1.png");
+    background-image:url("background2.png");
     background-size:cover;
     background-repeat:repeat-x;
 
@@ -59,7 +59,7 @@
     color:rgb(164, 169, 235);
     font-family:"Arial";
 
-    background-image:url("resources/background_images/backgroundend.jpg");
+    background-image:url("backgroundend.jpg");
     background-size:cover;
 
     opacity:9.97;
@@ -115,7 +115,7 @@
     color:mediumspringgreen;
     font-family:"Arial";
      
-    background-image: url("resources/background_images/background2.jpg");
+    background-image: url("background5.jpg");
     background-size:cover;
 
     display:flex;
@@ -175,7 +175,7 @@
     width:100%;
     height:100vh;
     
-    background-image: url("resources/background_images/background3.jpg");
+    background-image: url("background4.jpg");
     background-size:cover;
     
 
