@@ -1,14 +1,14 @@
-var rs = new Audio("resources/audio/run.mp3");
+var rs = new Audio("run.mp3");
 rs.loop = true;
 
-var js = new Audio("resources/audio/jump.mp3");
+var js = new Audio("jump.mp3");
 
-var ds = new Audio("resources/audio/dead.mp3");
+var ds = new Audio("dead.mp3");
 
-var idls = new Audio("resources/audio/Idle.mp3");
+var idls = new Audio("Idle.mp3");
 idls.loop = true;
 
-var ws = new Audio("resources/audio/win.mp3");
+var ws = new Audio("win.mp3");
 
 var rw = 0;
 var jw = 0;
@@ -81,7 +81,7 @@ function f() {
 
         var i = document.createElement("img");
 
-        i.src = "resources/flame2.gif";
+        i.src = "flame2.gif";
 
         i.className = "f";
 
@@ -155,7 +155,7 @@ function run() {
         r = 1;
     }
 
-    img.src = "resources/sprites/run/Run (" + r + ").png";
+    img.src = "Run (" + r + ").png";
 }
 
 var mt = 420;
@@ -203,7 +203,7 @@ function jump() {
         }
     }
 
-    img.src = "resources/sprites/jump/Jump (" + j + ").png";
+    img.src = "Jump (" + j + ").png";
 }
 
 var x = 1;
@@ -213,7 +213,7 @@ function idle() {
     if (x == 11) {
         x = 1;
     }
-    img.src = "resources/sprites/idle/Idle (" + x + ").png";
+    img.src = "Idle (" + x + ").png";
 }
 
 
@@ -263,7 +263,7 @@ function coin() {
         c = 1;
     }
 
-    document.getElementById("coin").src = "resources/coin/Coin (" + c + ").png";
+    document.getElementById("coin").src = "Coin (" + c + ").png";
 }
 
 var d = 1;
@@ -277,7 +277,7 @@ function dead() {
         document.getElementById("end").style.visibility = "visible";
         document.getElementById("endscore").innerHTML = u;
     }
-    img.src = "resources/sprites/dead/Dead (" + d + ").png";
+    img.src = "Dead (" + d + ").png";
 }
 
 
