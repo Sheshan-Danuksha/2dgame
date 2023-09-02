@@ -15,7 +15,7 @@
 .boy{
     position:absolute;
     height:340px;
-    margin-top:420px;
+    margin-top:45vh;
     margin-left:250px;
 }
 
@@ -121,6 +121,7 @@
     display:flex;
     justify-content:center;
     align-items:center;
+    visibility: hidden;
 
     
 }

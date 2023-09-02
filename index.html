@@ -3,62 +3,77 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FREEKNIGHT | PSD</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="resources/icon.ico" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
 </head>
 
 <body class="body" onkeyup="key(event);">
-    <div class="div1" id="div1">
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="div1 col-12" id="div1">
+                <div class="row">
+
+                    <div class="col-1">
+                        <img class="coin " id="coin" src="resources/coin/Coin (1).png" />
+                    </div>
+
+                    <div class="col-1">
+                        <p class="score" id="score">GO</p>
+                    </div>
+                    <div class="offset-10"></div>
+
+                    <div class="col-1">
+                        <img class="boy" id="boy" src="resources/sprites/idle/Idle (1).png" />
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="end col-12" id="end">
+
+                <div class="endcenter">
+
+                    <div>Game Over</div>
+                    <div>Youre Score</div>
+                    <div id="endscore">0</div>
+                    <button class="btn1" onclick="re();">Start Again</button>
+
+                </div>
+            </div>
+
+            <div class="start col-12" id="start">
+
+                <div class="startcenter">
+
+                    <div>WELCOME TO FREEKNIGHT | PSD GAME!</div>
+
+                    <div> *** </div>
+                    <button class="btn2" onclick="str(event);">START GAME WITH REST</button>
+                    <div class="d2">
+                        <p>You can start this game press "ENTER" key OR press "SPACE" KEY </p>
+                        <ul>
+                            <li> RUN :- "ENTER" KEY </li>
+                            <li>JUMP :-"SPACE" KEY </li>
+                        </ul>
+                    </div>
+
+                </div>
 
 
-        <p class="score" id="score">GO</p>
+            </div>
 
-
-        <img class="coin" id="coin" src="resources/coin/Coin (1).png" />
-
-        <img class="boy" id="boy" src="resources/sprites/idle/Idle (1).png" />
-
-    </div>
-
-    <div class="end" id="end">
-
-        <div class="endcenter">
-
-            <div>Game Over</div>
-            <div>Youre Score</div>
-            <div id="endscore">0</div>
-            <button class="btn1" onclick="re();">Start Again</button>
-
-        </div>
-    </div>
-
-    <div class="start" id="start">
-
-        <div class="startcenter">
-
-            <div>WELCOME TO FREEKNIGHT | PSD GAME!</div>
-
-            <div> *** </div>
-            <button class="btn2" onclick="str(event);">START GAME WITH REST</button>
-            <div class="d2">
-                <p>You can start this game press "ENTER" key OR press "SPACE" KEY </p>
-                <ul>
-                    <li> RUN :- "ENTER" KEY </li>
-                    <li>JUMP :-"SPACE" KEY </li>
-                </ul>
+            <div class="win col-12" id="win">
+                <button class="btn3" onclick="re();">Start Again</button>
             </div>
 
         </div>
-
-
     </div>
-
-    <div class="win" id="win">
-        <button class="btn3" onclick="re();">Start Again</button>
-    </div>
-
-
 
     <script src="script.js"></script>
 </body>
